@@ -3,10 +3,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:application name="consumer-of-helloword-app"/>
+    <dubbo:application name="hello-world-app"/>
 
-    <dubbo:registry address="multicast://224.5.6.7:1234" />
+    <dubbo:registry address="multicast://224.5.6.7:1234"/>
 
-    <dubbo:reference id="demoService" interface="cn.niceabc.dubbo.DemoService" cache="lru"/>
+    <dubbo:protocol name="dubbo" port="20880"/>
+
+    <dubbo:service interface="cn.niceabc.dubbo.async.DemoService" ref="demoService" timeout="15000"/>
+
+    <bean id="demoService" class="cn.niceabc.dubbo.async.DemoServiceImpl"/>
 
 </beans>
