@@ -7,6 +7,10 @@
 
     <dubbo:registry address="multicast://224.5.6.7:1234" />
 
-    <dubbo:reference id="demoService" interface="cn.niceabc.dubbo.DemoService" cache="lru"/>
+    <dubbo:reference id="demoService" interface="cn.niceabc.dubbo.event.DemoService">
+        <dubbo:method name="sayHello" onthrow="notify.onthrow"/>
+    </dubbo:reference>
+
+    <bean id="notify" class="cn.niceabc.dubbo.event.NotifyImpl"/>
 
 </beans>

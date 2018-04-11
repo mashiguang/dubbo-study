@@ -1,4 +1,6 @@
-package cn.niceabc.dubbo;
+package cn.niceabc.dubbo.simple;
+
+import cn.niceabc.dubbo.simple.DemoService;
 
 public class DemoServiceImpl implements DemoService {
     public String sayHello(String name) throws Exception {
