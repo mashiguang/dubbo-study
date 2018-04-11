@@ -10,4 +10,8 @@ http://dubbo.apache.org/books/dubbo-user-book/
     	    at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
     	    at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:45)
     	    ......
-3. sdf
+3. Stub应该是consumer端的概念，但为什么文档示例代码中，把stub配置在了provider上。
+
+        http://dubbo.apache.org/books/dubbo-user-book/demos/local-stub.html
+    
+4. sdf
