@@ -7,6 +7,6 @@
 
     <dubbo:registry address="multicast://224.5.6.7:1234" />
 
-    <dubbo:reference id="demoService" interface="cn.niceabc.dubbo.simple.DemoService" cache="lru"/>
+    <dubbo:reference id="demoService" interface="cn.niceabc.dubbo.simple.DemoService" retries="3"/>
 
 </beans>
