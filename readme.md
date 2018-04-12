@@ -14,4 +14,4 @@ http://dubbo.apache.org/books/dubbo-user-book/
 
         http://dubbo.apache.org/books/dubbo-user-book/demos/local-stub.html
     
-4. 只在provider端配了token
+4. 只在provider端配了token，consumer就可以用上这个token，怎么做到的？
