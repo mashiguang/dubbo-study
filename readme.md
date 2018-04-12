@@ -14,7 +14,7 @@ http://dubbo.apache.org/books/dubbo-user-book/
         	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
         	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:45)
  
- 2. prodiver端抛出异常后，consumer端拦截到，但为什么异常信息里会有XxxImpl这样的信息？异常里有实现类相关的信息
+2. prodiver端抛出异常后，consumer端拦截到，但为什么异常信息里会有XxxImpl这样的信息？异常里有实现类相关的信息
 
         cn.niceabc.dubbo.event
         java.lang.Exception: no World.
@@ -32,3 +32,7 @@ http://dubbo.apache.org/books/dubbo-user-book/
    
    如http://dubbo.apache.org/books/dubbo-user-book/references/xml/introduction.html
    所说，provider端所有配置都会生成到url，经由注册中心转播给consumer端。
+
+5. zookeeper
+
+        docker run --name some-zookeeper --restart always -d -p 0.0.0.0:2181:2181 -p 0.0.0.0:2888:2888 -p 0.0.0.0:3888:3888 zookeeper
