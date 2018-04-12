@@ -9,7 +9,7 @@
 
     <dubbo:protocol name="dubbo" port="20880"/>
 
-    <dubbo:service interface="cn.niceabc.dubbo.stub.DemoService" ref="demoService"/>
+    <dubbo:service interface="cn.niceabc.dubbo.stub.DemoService" ref="demoService" token="123456"/>
 
     <bean id="demoService" class="cn.niceabc.dubbo.stub.DemoServiceImpl"/>
 

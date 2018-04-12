@@ -14,4 +14,4 @@ http://dubbo.apache.org/books/dubbo-user-book/
 
         http://dubbo.apache.org/books/dubbo-user-book/demos/local-stub.html
     
-4. sdf
+4. 只在provider端配了token
