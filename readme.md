@@ -14,4 +14,8 @@ http://dubbo.apache.org/books/dubbo-user-book/
 
         http://dubbo.apache.org/books/dubbo-user-book/demos/local-stub.html
     
+    >同问题4
+    
 4. 只在provider端配了token，consumer就可以用上这个token，怎么做到的？
+    >如http://dubbo.apache.org/books/dubbo-user-book/references/xml/introduction.html
+    所说，provider端所有配置都会生成到url，经由注册中心转播给consumer端。
