@@ -30,7 +30,8 @@ http://dubbo.apache.org/books/dubbo-user-book/
     
 4. 只在provider端配了token，consumer就可以用上这个token，怎么做到的？
    
-   如http://dubbo.apache.org/books/dubbo-user-book/references/xml/introduction.html
+   如http://dubbo.apache.org/books/dubbo-user-book/references/xml/introduction.html， 
+   http://dubbo.apache.org/books/dubbo-user-book/recommend.html  
    所说，provider端所有配置都会生成到url，经由注册中心转播给consumer端。
 
 5. zookeeper
@@ -47,4 +48,8 @@ http://dubbo.apache.org/books/dubbo-user-book/
     
         docker run --name nd-redis  --restart always -d -p 0.0.0.0:6379:6379 redis
 
-7. asdf
+7. 启动简易注册中心失败
+
+        http://dubbo.apache.org/books/dubbo-user-book/references/maven.html
+    
+8. sdf    
