@@ -36,3 +36,15 @@ http://dubbo.apache.org/books/dubbo-user-book/
 5. zookeeper
 
         docker run --name some-zookeeper --restart always -d -p 0.0.0.0:2181:2181 -p 0.0.0.0:2888:2888 -p 0.0.0.0:3888:3888 zookeeper
+
+6. redis
+
+    cn.niceabc.dubbo.redis.RedisTest.test，执行时正常，但在退出时，为什么报了异常
+    
+        redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketException: Socket is closed
+
+    安装redis
+    
+        docker run --name nd-redis  --restart always -d -p 0.0.0.0:6379:6379 redis
+
+7. asdf
