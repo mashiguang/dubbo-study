@@ -56,3 +56,7 @@ http://dubbo.apache.org/books/dubbo-user-book/
 
 总结：
 1. Dubbo 的设计目的是为了满足高并发小数据量的 rpc 调用，在大数据量下的性能表现并不好，建议使用 rmi 或 http 协议。
+2. dubbo更专注rpc，与spring cloud并不正面冲突。
+
+其它：
+1. https://www.cacti.net/index.php 是什么?
